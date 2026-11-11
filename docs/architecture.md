@@ -28,7 +28,7 @@ flowchart TB
     DYN --> IMP[六项沟通画像]
     IMP --> CH[内容目录]
     CH --> SAVE[汇合并保存 Report]
-    SAVE --> UI
+    SAVE --> VIEW[报告展示与原话回查]
     SRC -. 原文 .-> DYN
     SRC -. 原文 .-> IMP
     SRC -. 原文 .-> CH
@@ -36,7 +36,7 @@ flowchart TB
     K -.-> IMP
     SRC --> SEL[独立触发的选区分析]
     K -.-> SEL
-    SEL --> UI
+    SEL --> VIEW
 ```
 
 主链实线表示**当前请求中的执行顺序**：`analyzeV2 → analyzeDynamics → analyzeImpressions → analyzeChapters`。后续模块各自接收原文，不能把这条线理解成动态只读 v2 事件、画像只读 CSI、目录只读画像。现阶段画像、动态与选区共用新增知识包；v2 与目录使用各自的分析指令。
