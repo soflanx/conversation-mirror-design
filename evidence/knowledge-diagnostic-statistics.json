@@ -1,0 +1,114 @@
+{
+  "generatedAt": "2026-11-10T12:37:35.895787+00:00",
+  "frozenEngineSha256": "0c53e889b37797d354db28e3b97411d84bab2587b5e7dab76970cc1cb185a0bd",
+  "impressions": {
+    "attempts": 13,
+    "status": {
+      "completed": 13
+    },
+    "requests": 26,
+    "actualModelInvocations": 26,
+    "actualInputCharacters": 606605,
+    "savedOutputCharacters": 45909
+  },
+  "impressionStageCounts": {
+    "impressions_candidate": 13,
+    "impressions_review": 13
+  },
+  "byMode": {
+    "all": {
+      "runs": 6,
+      "actualStageInvocations": 12,
+      "savedInputCharacters": 322639,
+      "savedOutputCharacters": 22899
+    },
+    "baseline": {
+      "runs": 6,
+      "actualStageInvocations": 12,
+      "savedInputCharacters": 256500,
+      "savedOutputCharacters": 20368
+    },
+    "retrieved": {
+      "runs": 1,
+      "actualStageInvocations": 2,
+      "savedInputCharacters": 27466,
+      "savedOutputCharacters": 2642
+    }
+  },
+  "comparisonJudgments": {
+    "mixed": 2,
+    "preference": 2,
+    "tie": 2
+  },
+  "smallPreferenceRecordings": [
+    "reality",
+    "technology"
+  ],
+  "noOverallWinner": true,
+  "selectedExecutionWindow": {
+    "startedAt": "2026-11-10T11:45:52.100Z",
+    "finishedAt": "2026-11-10T12:22:57.553Z",
+    "secondsIncludingDispatchAndHostWaiting": 2225.453
+  },
+  "knowledgeCompression": {
+    "rawAllGuidanceCharacters": 5105,
+    "rawRetrievedEducationGuidanceCharacters": 4485,
+    "educationRawGuidanceSavingPerStage": 620,
+    "educationSerializedInstructionSavingPerStage": 630,
+    "educationAdditionalReviewDataSavingFromShorterCandidate": 91,
+    "educationMeasuredTotalRequestSaving": 1351,
+    "educationMeasuredTotalRequestSavingPercent": 4.6882048790644415,
+    "otherFiveGuidanceIdentical": true
+  },
+  "pairedAllVsBaselineInput": {
+    "baseline": 256500,
+    "all": 322639,
+    "increase": 66139,
+    "increasePercent": 25.785185185185185
+  },
+  "engineering": {
+    "attempts": 1,
+    "status": {
+      "completed": 1
+    },
+    "requests": 2,
+    "actualModelInvocations": 2,
+    "actualInputCharacters": 17061,
+    "savedOutputCharacters": 2380
+  },
+  "blindReview": {
+    "actualReviewInvocations": 2,
+    "savedInputCharacters": 199462,
+    "savedOutputCharacters": 34600,
+    "recordings": 6,
+    "outputs": 13
+  },
+  "excludedInfrastructure": {
+    "attempts": 3,
+    "status": {
+      "failed": 3
+    },
+    "requests": 5,
+    "actualModelInvocations": 3,
+    "actualInputCharacters": 44066,
+    "savedOutputCharacters": 10121
+  },
+  "excludedVersionInterruption": {
+    "attempts": 2,
+    "status": {
+      "failed": 2
+    },
+    "requests": 3,
+    "actualModelInvocations": 2,
+    "actualInputCharacters": 27095,
+    "savedOutputCharacters": 3487
+  },
+  "overall": {
+    "realStageAndBlindAgentInvocations": 35,
+    "savedInputFileCharacters": 894289,
+    "savedOutputFileCharacters": 96497,
+    "runnerRequestFiles": 36,
+    "runnerRequestsActuallyDispatched": 33
+  },
+  "measurement": "Saved model-request instructions/data/schema and response-file characters use JavaScript UTF-16 length; they exclude system instructions, agent dispatch wrappers, and tool/runtime overhead. Wall time includes model work, dispatch waiting, and host suspension. Not tokens, money, or pure inference latency. Blind inputs additionally count saved anonymous packet and rubric files. Counts refer to isolated stage/review agent executions, not billable internal model/API round trips. Interrupted work may have no saved output."
+}
